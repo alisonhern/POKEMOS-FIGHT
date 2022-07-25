@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <title>Pokémon</title>
+    <link rel="shortcut icon" href="/img/pokeball-opening-png.png">
+    <link rel="stylesheet" href="navegacion.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="principal.css">
+    <link href="staylesheet" href="pokemon.html">
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li class="list" style="--clr:#2872ed">
+                <a href="./index.html">
+                    <span class="icono"><ion-icon name="play"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#2872ed">
+                <a href="./pokedex.html">
+                    <span class="icono"><ion-icon name="card"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:#2872ed">
+                <a href="./principal.html">
+                    <span class="icono"><ion-icon name="home"></ion-icon></span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+       </div>
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    
+    <script>
+        const list = document.querySelectorAll('.list'); 
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active')
+        } 
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+    <section>
+        <div class="content">
+            <center> <h1>BIENVENIDO AL POKEMON FIGHT</h1>
+             <p>querido amig@, eh creado este juego para ti ,donde te vas a entretener atrapando pokemos ,te comento que hay mas de 150 targetas para entretenerte hasta ccon tus amigos ;espero disfrutes este juego ,BUENA SUERTE.       
+            </p>
+            <a href="./index.html">EMPEZAR</a></center>
+        </div>
+        <div class="img">
+            <img src="/img/047.png"> 
+        </div>
+    </section>
+ 
+</body>
+</html>
